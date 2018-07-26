@@ -3,7 +3,34 @@
     };
     var b = a;
     b.c = a = {y:1};
+//----------------------------
+    console.log(a);
+    var a=12;
+    function fn(){
+        console.log(a);
+        var a=13;
+    }
+    fn();
+    console.log(a)
 
+    //-------
+    console.log(a);
+    var a=12;
+    function fn(){
+          console.log(a);
+          a=13
+    }
+    fn();
+    console.log(a)
+    //----------------
+    var foo=1;
+    function bar(){
+        if(!foo){
+            var foo=10;
+        }
+        console.log(foo);
+    }
+    bar();
 
 //----------------------------
 
@@ -74,3 +101,15 @@
             alert(2);
         }
     }
+//    ---------------------------------
+    f = function(){return true};
+    g = function(){return false};
+    (function (){
+        console.log(g);
+        if(g()&&[]==![]){
+            f = function f(){return false};
+            function g(){return true};
+        }
+    })();
+    alert(f());
+    alert(g())
