@@ -59,13 +59,14 @@ function outer(){
     function inner(n){
         console.log(n)
         function center(){
+            n++;
             console.log(n);
         }
         center();
     }
     inner(n);
 }
-outer()
+outer();
 
 //6、
 var n = 10;
