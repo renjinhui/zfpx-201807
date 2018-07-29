@@ -23,7 +23,7 @@ console.log(pepole());
 //2
 var num = 2;
 var obj = {
-    num: 2,
+    num: 1,
     fn: (function (num) {
         num *= 2;
         this.num +=1;
@@ -35,8 +35,8 @@ var obj = {
     })(num)
 };
 var fn = obj.fn;
-fn();
-obj.fn();
+fn(10);
+obj.fn(20);
 console.log(num, obj.num);
 
 
@@ -51,20 +51,3 @@ console.log(x.x);
 console.log(y.x);
 
 //4
-var number = 4;
-var obj = {
-    'number': 4,
-    'tbl': (function(num){
-        this.number *= 2;
-        num+=2;
-        console.log(this.number);
-        return function(){
-            this.number *= 2;
-            num++;
-            console.log(num,this.num)
-        }
-    })(number)
-};
-var tbl = obj.tbl;
-tbl();
-obj.tbl();
