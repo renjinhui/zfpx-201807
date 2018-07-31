@@ -12,12 +12,14 @@ f(2);
 //
 
 var obj = {name:'中国',age:5000};
-(function(name,obj){
+var name = '中国';
+var age = 5000;
+(function(name,age){
     arguments[0]='珠峰培训';
-    obj.age=obj.age && 10;
-    console.log(name,obj.age);
-})(obj.name,obj);
-console.log(obj.name,obj.age);
+    age=age || this.age;
+    console.log(name,age);
+})(name);
+console.log(name,age);
 
 //
 
@@ -105,3 +107,37 @@ var a = {
 var fn =a.fn();
 fn();
 a.fn()();
+
+
+var num = 1;
+var obj = {num:2};
+obj.fn = (function (num) {
+    this.num = num * 2;
+    num++;
+    return function (n) {
+        this.num += n;
+        num++;
+        console.log(num)
+    }
+})(obj.num);
+var fn = obj.fn;
+fn(10);
+obj.fn(20);
+console.log(num, obj.num);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
