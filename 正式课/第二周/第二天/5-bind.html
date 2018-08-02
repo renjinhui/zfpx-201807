@@ -51,7 +51,7 @@
     // 在 小函数中 用 call 或 apply 改变 传进来函数的指向；
     // 发现 我们需要用到两次传进来的参数；
     // 这时我们利用数组的 concat 把两次的参数结合起来；
-    
+
     Function.prototype.myBind = myBind;
 
     var f3 = f1.myBind(obj,1,2,3);
