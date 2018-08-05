@@ -9,11 +9,77 @@
 </body>
 </html>
 <script>
+    function Person() {
+        this.a = 12;
+        this.b = 13;
+    }
+    var per = new Person();
+    Person.prototype.constructor === Person;
+    Person.prototype.getName = function () {
+        console.log(12);
+    };
+    Person.prototype.age = 15;
+    Person.getName2 = function () {
+        console.log('getName2');
+    };//Person 当作普通对象
+    function FN() {
+        Person.call(this);
+        this.c = 13;
+    }
+    FN.prototype = Person.prototype;
+    // var f = new Fn();// 私有 a,b,c  公有getName age
+    // Person.getName2();//
+
+
+
+
+
+
+    class Person2{
+        constructor(){
+            this.a = 12;
+            this.b = 13;
+        }
+        getName(){
+            console.log(12);
+        }
+        getAge(){
+            console.log('age');
+        }
+        static getAge2(){
+            console.log('getAge2');
+        }
+        static getAge3(){
+            console.log('getAge3');
+        }
+    }
+    var per2 = new Person2();
+    // Person2.prototype.constructor === Person2;
+    console.log(per2.hasOwnProperty('a'));
+
+    class Person3 extends Person2{
+        constructor(){
+            super();
+            this.c = 14;
+            this.d = 15;
+        }
+        getSex(){
+            console.log('getSex');
+        }
+    }
+    var per3 = new Person3();
+    console.dir(Person3);
+    console.log(per3);
+
+
     class A{
         //class 声明的类 只能通过 new 执行
         constructor(){
             this.a = 12;
             this.b = 13;
+            this.fn = function () {
+
+            }
             //私有属性
         }
         //公有属性
