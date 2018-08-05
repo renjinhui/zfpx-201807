@@ -14,7 +14,7 @@ var obj = {
 obj.say();
 
 
-var F=function(){};
+var F = function(){};
 Object.prototype.a=function(){
     console.log('a()')
 };
