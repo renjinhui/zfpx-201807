@@ -78,10 +78,15 @@ for(let i = 0; i < btns.length; i++){
             });
             flag = 0;
         }
-
+        /*
+        * 创造一个文档碎片
+        * */
+        var frag = document.createDocumentFragment();
         liAry.forEach((item)=>{
-            oUl.appendChild(item)
-        })
+            frag.appendChild(item)
+        });
+        oUl.appendChild(frag);
+        frag = null;
     }
 }
 
