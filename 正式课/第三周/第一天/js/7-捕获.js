@@ -70,6 +70,9 @@ RegExp.prototype.execAll = function (str) {
         ary.push(temp[0]);
         temp = this.exec(str);
     }
+    // while (this.exec(str)){
+    //     ary.push(this.exec(str)[0]);
+    // }
     return ary;
 };
 console.log(reg4_1.execAll(str4));
