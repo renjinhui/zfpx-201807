@@ -6,7 +6,6 @@ var utils = (function () {
         }catch (e) {
             res = ele.currentStyle[attr];
         }
-        //rgb(203,234,345)
         var reg = /^[+-]?(\d|[1-9]\d+)(\.\d+)?(px|rem|em|pt)?$/;
         if(reg.test(res)){
             res = parseFloat(res);
