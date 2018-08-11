@@ -77,7 +77,7 @@
     var timer2 = null;
     var fn = function () {
         clearTimeout(timer2);
-        var h = oDiv.scrollTop++;
+        var h = ++oDiv.scrollTop;
         if(h == oDiv.scrollTop){
             oDiv.scrollTop = 0;
         };
