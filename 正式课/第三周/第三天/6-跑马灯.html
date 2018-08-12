@@ -59,15 +59,15 @@
     * 重新设置 ul 的宽度
     * 控制 box 的 scrollLeft
     * */
-    oUl.innerHTML += oUl.innerHTML;
+    // oUl.innerHTML += oUl.innerHTML;
     //添加内容后会出现折行；
     //手动重新设置宽度， 解决这行问题
     oUl.style.width = utils.getcss(oUl,'width')*2 + 'px';
-    var timer = window.setInterval(function () {
-        var n = box.scrollLeft;
-        box.scrollLeft+=1;
-        if(n == box.scrollLeft){
-            box.scrollLeft = 0;
-        }
-    },10)
+    // var timer = window.setInterval(function () {
+    //     var n = box.scrollLeft;
+    //     box.scrollLeft+=1;
+    //     if(n == box.scrollLeft){
+    //         box.scrollLeft = 0;
+    //     }
+    // },10)
 </script>  
