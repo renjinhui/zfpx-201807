@@ -40,7 +40,8 @@ var utils = (function () {
             }
         }
     }
-    function css(...arg) {
+    function css() {
+        var arg = arguments;
         if(arg.length == 2){
             if(typeof arg[1] == 'string'){
                 return getCss(arg[0],arg[1])
@@ -62,6 +63,10 @@ var utils = (function () {
         return {// l:l,t:t
             l,t
         }
+        // return {// l:l,t:t
+        //     left:l,
+        //     top:t
+        // }
     }
     function toArray (a) {
         var ary = [];

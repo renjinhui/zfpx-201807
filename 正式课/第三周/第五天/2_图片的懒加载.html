@@ -23,7 +23,7 @@
 </head>
 <body>
     <div id="div1">珠峰培训</div>
-    <img src="imgs/img/default.gif" alt="">
+    <img src="imgs/img/default.gif" realSrc="img/2.jpg" alt="">
     <div class="bot"></div>
 </body>
 </html>
@@ -51,7 +51,10 @@
         var cT = utils.clientH();// 一屏的高度
         var tarT = utils.offset(oImg).t;// 图片到body的距离
         if(sT + cT > tarT){// 说明图片出来了
-            oImg.src = 'img/2.jpg'
+            var realSrc = oImg.getAttribute('realSrc');
+            //先用一个自定义属性把真正的路径保存起来
+            // 然后等条件符合的时候再把这个真实路径赋值给图片的src属性
+            oImg.src = realSrc;
         }
 
     };
