@@ -35,6 +35,7 @@
     function getByClass(str,context) {
         context = context || document;
         // var ary = [];
+
         var classAry = str.split(/ +/g);
         var eles = context.getElementsByTagName("*");
         if(!classAry[0].length){
@@ -59,7 +60,29 @@
 
     }
 
-    console.log(getByClass('   box   box3    '));;
+
+    function getByClass2(str,context) {
+        context = context || document;
+        str = str.replace(/^ +| +$/g,'');
+        var classAry = str.split(/ +/g);
+        var eles = context.getElementsByTagName("*");
+        for(var k = 0; k < classAry.length; k++){
+            var reg = new RegExp("(^| +)"+classAry[k]+"( +|$)");
+            var ary = [];
+            for(var i = 0; i < eles.length; i++){
+                if(reg.test(eles[i].className)){
+                    ary.push(eles[i])
+                }
+            }
+            // ary 存放的是 满足 ‘box’ 这个类名的元素
+            eles = ary;
+        }
+        // return eles
+        return ary
+
+    }
+    console.log(getByClass('   box   box3    '));
+    console.log(getByClass2('   box   box3    '));
     // console.log(getByClass('   box box2'));;
 
 </script>  

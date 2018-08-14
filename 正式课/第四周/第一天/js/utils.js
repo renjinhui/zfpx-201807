@@ -1,8 +1,11 @@
 var utils = (function () {
+    var flag = window.getComputedStyle ? false : true;
+    // flag 为true表示 IE6-8
+    // 惰性思想
     function getCss(ele,attr) {
         var str = navigator.userAgent;
         var res = null;
-        if(/MSIE *[6-8]/.test(str)){
+        if(flag){
             //IE 6-8
             res = ele.currentStyle[attr]
         }else {
@@ -90,6 +93,12 @@ var utils = (function () {
     function clientH() {
         return document.documentElement.clientHeight || document.body.clientHeight;
     }
+    function clientW() {
+        return document.documentElement.clientWidth || document.body.clientWidth;
+    }
+    function win(str) {
+        return document.documentElement[str] || document.body[str];
+    }
     function children(ele) {
         var childs = ele.children;
         var ary = [];
@@ -102,17 +111,52 @@ var utils = (function () {
     }
     function getByClass(str,context) {
         context = context || document;
-        var ary = [];
-        var eles = context.getElementsByTagName('*');
-        var reg = new RegExp('(^| +)'+str+'( +|$)');
-        for(var i = 0; i < eles.length; i++){
-            if(reg.test(eles[i].className)){
-                ary.push(eles[i])
+        str = str.replace(/^ +| +$/g,'');
+        var classAry = str.split(/ +/g);
+        var eles = context.getElementsByTagName("*");
+        for(var k = 0; k < classAry.length; k++){
+            var reg = new RegExp("(^| +)"+classAry[k]+"( +|$)");
+            var ary = [];
+            for(var i = 0; i < eles.length; i++){
+                if(reg.test(eles[i].className)){
+                    ary.push(eles[i])
+                }
+            }
+            eles = ary;
+        }
+        return ary
+
+    }
+    function hasClass(ele,str) {
+        str = str.replace(/^ +| +$/g,'');
+        var ary = str.split(/ +/g);
+        for(var i = 0 ; i < ary.length; i++){
+            var reg = new RegExp("(^| +)"+ary[i]+"( +|$)");
+            if(!reg.test(ele.className)){
+                return false
             }
         }
-        return ary;
+        return true;
+    }
+    function addClass(ele,str) {
+        str = str.replace(/^ +| +$/g,'');
+        if(hasClass(ele,str))return;
+        var ary = str.split(/ +/);
+        for(var i =0; i <ary.length;i++){
+            if(!hasClass(ele,ary[i])){
+                ele.className +=(' ' + ary[i]);
+            }
+        }
+    }
+    function removeClass(ele,str) {
+        str = str.replace(/^ +| +$/g,'');
+        var ary = str.split(/ +/g);
+        for(var i = 0; i < ary.length; i++){
+            var reg = new RegExp('(^| +)'+ary[i]+'( +|$)');
+            ele.className = ele.className.replace(reg,' ');
+        }
     }
     return{
-        getCss,setCss,setGroup,css,toArray,toJson,offset,scrollT,clientH,children,getByClass
+        getCss,setCss,setGroup,css,toArray,toJson,offset,scrollT,clientH,children,getByClass,hasClass,addClass,removeClass,clientW,win
     }
 })();

@@ -56,6 +56,7 @@
         * 然后再从这些节点中筛选出 有str这个类名的
         * */
         context = context || document;
+        str = str.replace(/^ +| +$/g,'');
         var ary = []; // 存放符合条件的元素
         // var eles = children(context); 只能获取儿子一辈
         var eles = context.getElementsByTagName('*');
@@ -79,5 +80,5 @@
     }
 
     console.log(getByClass('box', oDiv)[0]);// --> 所有含有box的元素拿到
-    console.log(getByClass('box'));// --> 所有含有box的元素拿到
+    console.log(getByClass('box '));// --> 所有含有box的元素拿到
 </script>
