@@ -51,6 +51,7 @@ timer = window.setInterval(function () {
 },3000);
 function play() {
     //怎么动  动多少？
+    if(utils.css(oUl,'left')%boxW != 0)return;
     index++;// 进来先加一个，然后这次的运动是走下一个图片
     if(index == -1){// 往左走的左边界
         utils.css(oUl,'left',-boxW*(n-1));//直接闪到最后一张
