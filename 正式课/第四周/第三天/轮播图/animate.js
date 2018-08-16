@@ -16,7 +16,9 @@
             return c / 2 * (Math.sqrt(1 - (t -= 2) * t) + 1) + b;
         }
     };
+    // var timer = null;
     function move2(ele,duration,obj,moveT,callback){
+        clearInterval(ele.timer);
         var beginL = {};
         var changeL = {};
         moveT = moveT || 'linear';
@@ -25,12 +27,12 @@
                 beginL[k] = utils.css(ele,k);
                 changeL[k] = obj[k] - beginL[k];
             }
-        }
+        };
         var times = 0;
-        var timer = setInterval(function () {
+        ele.timer = setInterval(function () {
             times += 20;
             if(times >= duration){
-                clearInterval(timer);
+                clearInterval(ele.timer);
                 times = duration;
                 callback&&callback();
             }
