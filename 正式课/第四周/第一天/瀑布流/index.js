@@ -86,8 +86,10 @@ function loadAll(eles) {
 }
 loadAll(oImgs);
 window.onscroll = function () {
-    loadAll(oImgs);
     getMore();
+    loadAll(oImgs);
+    // getMore();
+    console.log(22)
 };
 
 /*

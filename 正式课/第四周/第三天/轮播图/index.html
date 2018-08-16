@@ -9,7 +9,7 @@
             padding: 0;
             list-style: none;
         }
-        #div1{
+        #div1,#div2{
             width: 600px;
             height: 260px;
             margin: 50px auto 0;
@@ -50,12 +50,32 @@
             position: absolute;
             top: 80px;
             font-size: 28px;
+            display: none;
         }
         .btn_box .leftBtn{
             left: 0;
         }
         .btn_box .rightBtn{
             right: 0;
+        }
+        .tip_box{
+            position: relative;
+            text-align: center;
+            top: -75px;
+        }
+        .tip_box li{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            background: #333;
+            color: #fff;
+            font-size: 20px;
+        }
+        .tip_box li.current{
+            color: salmon;
+            font-size: 24px;
         }
     </style>
 </head>
@@ -73,9 +93,33 @@
             <div class="leftBtn"> < </div>
             <div class="rightBtn"> > </div>
         </div>
+        <ul class="tip_box">
+            <li class="tip">1</li>
+        </ul>
+    </div>
+    <div id="div2">
+        <ul class="img_box">
+            <li>
+                <img src="" alt="">
+                <p>这是个解释</p>
+            </li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="btn_box">
+            <div class="leftBtn"> < </div>
+            <div class="rightBtn"> > </div>
+        </div>
+        <ul class="tip_box">
+            <li class="tip">1</li>
+        </ul>
     </div>
 </body>
 </html>
 <script src="utils.js"></script>
 <script src="animate.js"></script>
-<script src="index.js"></script>
+<script src="index3.js"></script>
+<script>
+    var banner = new Banner('div1','data.json');
+    var banner2 = new Banner('div2','data2.json');
+</script>
