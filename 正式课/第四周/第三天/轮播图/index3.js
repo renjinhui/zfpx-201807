@@ -72,7 +72,7 @@ Banner.prototype = {
             utils.addClass(this.tips[this.index],'current');
         }
         var curL =  -this.boxW*this.index;
-        myAnimate(this.oUl,1500,{left:curL});
+        myAnimate(this.oUl,500,{left:curL});
     },
     eventFn: function eventFn() {
         this.rightBtn.onclick = () => {
@@ -99,6 +99,9 @@ Banner.prototype = {
     tipClick: function tipClick() {
         for(let i = 0; i < this.tips.length; i++){
             this.tips[i].onclick = () => {
+                if(this.index == this.n-1){
+                    utils.css(this.oUl,'left',0);
+                }
                 this.index = i-1;
                 this.play();
             }
