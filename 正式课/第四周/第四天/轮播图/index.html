@@ -9,27 +9,28 @@
             margin: 0;
             list-style: none;
         }
-        #box{
+        #box,#box2{
             width: 600px;
             height: 300px;
+            position: relative;
             margin: auto;
             overflow: hidden;
         }
-        #box ul.ul_box{
+        ul.ul_box{
             height: 300px;
             overflow: hidden;
         }
-        #box ul.ul_box li{
+        ul.ul_box li{
             width: 600px;
             height: 300px;
             position: relative;
             float: left;
         }
-        #box ul.ul_box li img{
+        ul.ul_box li img{
             width: 100%;
             height: 100%;
         }
-        #box ul.ul_box li p{
+        ul.ul_box li p{
             position: absolute;
             width: 100%;
             height: 50px;
@@ -41,6 +42,46 @@
             left: 0;
             padding: 0  10px;
         }
+        .leftBtn,.rightBtn{
+            position: absolute;
+            width: 50px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            background: rgba(0,0,0,0.5);
+            color: #fff;
+            font-size: 25px;
+            top: 50%;
+            margin-top: -50px;
+            display: none;
+        }
+        .leftBtn{
+            left: 0;
+        }
+        .rightBtn{
+            right: 0;
+        }
+        .tip_box{
+            position: relative;
+            width: 100%;
+            text-align: center;
+            top:-80px;
+        }
+        .tip{
+            width: 20px;
+            height: 20px;
+            background: darksalmon;
+            font-size: 20px;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 20px;
+            display: inline-block;
+        }
+        .tip.current{
+            font-size: 24px;
+            color: #24ccc8;
+        }
     </style>
 </head>
 <body>
@@ -51,6 +92,28 @@
                 <img src="http://cms-bucket.nosdn.127.net/2018/08/13/cae603550dc94bb29393d1b470e89ad9.jpeg" alt="">
                 <p>这是一个解释</p>
             </li>
+        </ul>
+        <div class="btn_box">
+            <div class="leftBtn"> < </div>
+            <div class="rightBtn"> > </div>
+        </div>
+        <ul class="tip_box">
+            <li class="tip">1</li>
+        </ul>
+    </div>
+    <div id="box2">
+        <ul class="ul_box">
+            <li>
+                <img src="http://cms-bucket.nosdn.127.net/2018/08/13/cae603550dc94bb29393d1b470e89ad9.jpeg" alt="">
+                <p>这是一个解释</p>
+            </li>
+        </ul>
+        <div class="btn_box">
+            <div class="leftBtn"> < </div>
+            <div class="rightBtn"> > </div>
+        </div>
+        <ul class="tip_box">
+            <li class="tip">1</li>
         </ul>
     </div>
 </body>
