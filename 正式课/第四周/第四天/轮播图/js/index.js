@@ -17,13 +17,30 @@ Banner.prototype = {
     getData: function () {
         //获取数据
         var xhr = new XMLHttpRequest();
-        xhr.open('get',this.url,false);
+        xhr.open('get',this.url);
         xhr.onreadystatechange =  () => {
             if(xhr.readyState == 4 && /^2\d{2}$/.test(xhr.status)){
                 this.data = utils.toJson(xhr.responseText);
+                this.cb();
             }
         };
         xhr.send();
+    },
+    getData2:function(){
+        return new Promise((res,rej)=>{
+            var xhr = new XMLHttpRequest();
+            xhr.open('get',this.url);
+            xhr.onreadystatechange =  () => {
+                if(xhr.readyState == 4 && /^2\d{2}$/.test(xhr.status)){
+                    this.data = utils.toJson(xhr.responseText);
+                    res();
+                }
+                if(!/^2\d{2}$/.test(xhr.status)){
+                    rej();
+                }
+            };
+            xhr.send();
+        })
     },
     giveHtml: function () {
         //把数据放到页面上
@@ -76,8 +93,8 @@ Banner.prototype = {
         myAnimate(this.oUl,1000,{left:-this.boxW*this.index},'easeOut');
     },
     autoPlay: function () {
-        this.timer = setInterval(function () {
-            banner.play();
+        this.timer = setInterval(() => {
+            this.play();
         },3000);
     },
     eventFn: function () {
@@ -114,12 +131,19 @@ Banner.prototype = {
             }
         }
     },
-    init:function () {
-        this.getData();
+    cb: function(){
         this.giveHtml();
         this.autoPlay();
         this.eventFn();
         this.tipClick();
+    },
+    init:function () {
+        var p = this.getData2();
+        p.then(()=>{
+            this.cb();
+        },()=>{
+            console.log('fail');
+        })
     }
 };
 
