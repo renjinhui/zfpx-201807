@@ -14,6 +14,8 @@ function dragStart(e) {
     this.mx = e.pageX;
     this.my = e.pageY;
 
+    on(oDiv,'myFly',fly);
+    on(oDiv,'myDrop',drop);
 }
 function dragMove(e) {
     e = e || window.event;
@@ -34,7 +36,7 @@ function dragEnd() {
     off(document,'mouseup');
     this.maxL = (document.documentElement.clientWidth||document.body.clientWidth) - this.offsetWidth;
     if(!this.running){
-        fire(this,'myFly');
+        fire(this,'myFly','qqq');
         // fly.call(this);
     }
     this.maxT = (document.documentElement.clientHeight||document.body.clientHeight) - this.offsetHeight;
