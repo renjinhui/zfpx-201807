@@ -24,7 +24,7 @@ function dragMove(e) {
     this.style.left = this.startX + x + 'px';
     this.style.top = this.startY + y + 'px';
     if(!this.prevX){
-        this.prevX = 0;
+        this.prevX = this.mx;
     }
     this.speed = e.pageX - this.prevX;
     this.prevX = e.pageX;
@@ -41,5 +41,5 @@ function dragEnd() {
     }
     this.maxT = (document.documentElement.clientHeight||document.body.clientHeight) - this.offsetHeight;
     // drop.call(this);
-    fire(this,'myDrop');
+    // fire(this,'myDrop');
 }
