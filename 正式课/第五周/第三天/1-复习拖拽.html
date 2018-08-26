@@ -110,7 +110,7 @@
         };
         this.dropSpeed *= 0.98;
         var t = this.offsetTop + this.dropSpeed;
-        if(t >= this.maxT){
+        if(t > this.maxT){
             t = this.maxT;
             this.dropSpeed *= -1;
             this.flag++;

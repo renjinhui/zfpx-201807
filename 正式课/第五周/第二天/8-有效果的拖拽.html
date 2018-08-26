@@ -52,7 +52,6 @@
         this.my = e.clientY;
     }
     function dragMove(e) {
-        if(this.running)return;
         var x = e.clientX - this.mx,
             y = e.clientY - this.my;
         $(this).css({
@@ -76,7 +75,6 @@
     //左右弹性动画
     function fly() {
         clearTimeout(this.flyTimer);
-        this.running = true;
         var $this = $(this);
         this.speed *= 0.98;// 初始速度
         var l = $this.offset().left + this.speed;
@@ -95,8 +93,6 @@
 
         if(Math.abs(this.speed) > 0.1){
             this.flyTimer = setTimeout(fly.bind(this),30);
-        }else {
-            this.running = false
         }
     }
 
