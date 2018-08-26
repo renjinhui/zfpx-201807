@@ -63,6 +63,7 @@
     // drop 必须配合 dragover 使用； dragover里要阻止默认事件
     oDiv2.ondrop = function (e) {
         e.preventDefault();
+        console.log(e);
         var file = e.dataTransfer.files[0];//获取 拖拽的 元素
         var name = file.name; // 获取文件的名字
         var type = file.type; // 获取文件的类型
