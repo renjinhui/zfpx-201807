@@ -116,6 +116,7 @@
         this.my = e.touches[0].pageY;
     };
     document.ontouchmove = function (e) {
+        e.preventDefault();
         this.changeX = e.touches[0].pageX - this.mx; // 手指横向移动距离
         this.changeY = e.touches[0].pageY - this.my; // 手指纵向移动距离
         oul.style.transform = `rotateX(${startX-this.changeY}deg) rotateY(${startY+this.changeX}deg)`
@@ -128,7 +129,7 @@
 
     /*
     * git 上传页面  ；  点进去一个项目   ；找到 settings ---> GitHub Pages ---> select theme
-    * 
+    *
     * */
     
     
