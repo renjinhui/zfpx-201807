@@ -1,6 +1,9 @@
 /*
 * 第一个块  loading
 * */
+let bell = $('#bell')[0],
+    say = $('#say')[0],
+    bgm = $('#bg_music')[0];
 
 let loading = function () {
     //进度条加载完成后 要让 loading的这个块消失
@@ -60,6 +63,11 @@ let phoneFn = function () {
         $noListenBtn = $('.no_listenBtn'), // 挂机键
         $timeBox = $('.phoneBox header h4');// 语音的时间
     // $listenBtn.on('touchend',)
+    bell.play();
+    // bell.addEventListener('canplay',function () {
+    //     console.log(1)
+    // },false);
+    // bell.play();
     $listenBtn.tap(function () {
         //点击 接听按钮  让 接听的盒子隐藏 ；让挂机盒子升上来
         $listenBox.hide();
@@ -67,8 +75,27 @@ let phoneFn = function () {
         $noListenBox.css({
             transform: 'translateY(0)'
         });
+        bell.pause();
+        say.play();
+        //语音播放  怎么让上边的时间跟着变化
+        let sayTimer = setInterval(function () {
+            let t = say.currentTime;
+            let str = '00:' + (Math.ceil(t) < 10 ? '0'+Math.ceil(t) : Math.ceil(t));
+            $timeBox.html(str);
+            //需要把say.currentTime  转成  00:34 这个格式的字符串
+
+            //需要我们判断音频是否播放完毕； 若 播放完毕 ，则直接执行 挂机键执行的操作
+            if(say.ended){
+                clearInterval(sayTimer);
+                phoneEnd();
+            }
+        },1000);
         //给挂机按钮绑定点击事件
         $noListenBtn.on('touchend',function () {
+            say.pause();
+            phoneEnd();
+        });
+        function phoneEnd() {
             let h = document.documentElement.clientHeight || document.body.clientHeight;
             // 获取到的是个以 px 为单位的 数字
             $phoneBox.css({
@@ -78,7 +105,7 @@ let phoneFn = function () {
             setTimeout(function () {
                 msgFn();
             },1000)
-        })
+        }
     })
 };
 
@@ -95,7 +122,7 @@ let msgFn = function () {
         $keyboard = $msgBox.find('.keyboard'),
         $textBox = $keyboard.find('.textBox'),
         $btn = $keyboard.find('.btn');
-
+    bgm.play();
     let h = 0,
         n = 0; //存储当前要显示的那个元素li的索引；
     let moveTimer = null;

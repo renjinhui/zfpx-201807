@@ -116,6 +116,31 @@
             <div class="btn hidden"></div>
         </div>
     </section>
+    <audio src="./audio/bell.mp3" preload="none" loop id="bell"></audio>
+    <audio src="./audio/say.mp3" preload="none" id="say"></audio>
+    <audio src="./audio/music.mp3" preload="none" loop id="bg_music"></audio>
+    <!--
+        audio 音频
+        video 视频
+
+        src -- 文件路径
+        preload --  none auto  metadata;
+                    none 不进行预加载
+                    auto 预加载
+                    metadata 只加载元数据
+       autoplay  自动播放
+       loop      循环播放
+       以上这些属性  都是属于元素的行内属性
+
+       音频.play() 让这个音频播放
+       音频.pause() 让这个音频暂停
+
+
+       音频.currentTime 音频当前播放的时间
+       音频.ended   若是 true 则表示 音频播放完毕
+       音频.paused  若是 true 则表示 音频暂停
+       音频.duration  音频的总共时间
+    -->
 </body>
 </html>
 <script src="js/zepto.min.js"></script>
