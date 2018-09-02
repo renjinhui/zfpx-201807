@@ -1,5 +1,6 @@
 
-var $oul = $('.ulBox');
+var $oul = $('.ulBox'),
+    $listBox = $('.listBox');
 
 /*
 * 实现 轮播图
@@ -93,4 +94,87 @@ p.then(function (data) {
     bannerFn();
 }).catch(function (res) {
     console.log(res)
+});
+
+/*
+* 新闻列表部分
+*
+* */
+
+var listPro = new Promise(function (resolve, reject) {
+   $.ajax({
+       type:'post',
+       url:'./data/list.json',
+       data:{t:1},
+       success:function (data) {
+           resolve(data)
+       },
+       error:function (res) {
+           reject(res)
+       }
+   })
+});
+//把数据放到列表中
+function giveListHtml(data) {
+    data = data || [];
+    var str = '';
+    data.forEach((item)=>{
+        switch (item.type){
+            case 0:// 第一种  无图的结构
+               str += `<a href="##">
+                    <div class="text_box">
+                        <p>${item.title}</p>
+                        <div class="comment_box">
+                            <em class="">
+                                <span class="">${item.num}</span>
+                                <span class="icon_com"></span>
+                            </em>
+                        </div>
+                    </div>
+                </a>`;
+               break;
+            case 1: // 一张图
+                str += `<a href="##">
+                <div class="img_box">
+                    <img src="${item.img}" alt="">
+                </div>
+                <div class="text_box">
+                    <p>${item.title}</p>
+                    <div class="comment_box">
+                        <em class="">
+                            <span class="">${item.num}</span>
+                            <span class="icon_com"></span>
+                        </em>
+                    </div>
+                </div>
+            </a>`;
+                break;
+            case 3: // 三张图
+                str += `<a class="three_box" href="##">
+                <p>${item.title}</p>
+                <div class="three_pic">
+                    <div>
+                        <img src="${item.img[0]}" alt="">
+                    </div>
+                    <div>
+                        <img src="${item.img[1]}" alt="">
+                    </div>
+                    <div>
+                        <img src="${item.img[2]}" alt="">
+                    </div>
+                </div>
+                <div class="comment_box">
+                    <em class="">
+                        <span class="">${item.num}</span>
+                        <span class="icon_com"></span>
+                    </em>
+                </div>
+            </a>`;
+                break;
+        }
+    });
+    $listBox.html(str);
+}
+listPro.then(function (data) {
+    giveListHtml(data);
 });

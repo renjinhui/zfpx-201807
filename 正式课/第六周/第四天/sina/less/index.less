@@ -70,6 +70,7 @@ header{
       color: #1a1a1a;
       text-align: center;
       position: relative;
+
       /*&.current{
         font-weight: 900;
         color: #008af5;
@@ -156,6 +157,7 @@ header{
       .swiper-slide{
         max-height: 340/@r;
         overflow: hidden;
+        //transform: scale(1.05);
         img{
           width: 100%;
         }
@@ -192,6 +194,8 @@ header{
       div.text_box{
         width: 100%;
         flex: 1;
+        min-height: 100/@r;
+        position:relative;
         p{
           font-size: 34/@r;
           line-height: 48/@r;
@@ -199,6 +203,8 @@ header{
         }
         .comment_box{
           color: #888;
+          position: absolute;
+          bottom: 13/@r;
           width: 100%;
           text-align: right;
           font-size: 20/@r;
@@ -211,6 +217,38 @@ header{
         width: 200/@r;
         height: 134/@r;
         margin-right: 25/@r;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    a.three_box{
+      display: block;
+      p{
+        font-size: 34/@r;
+        line-height: 48/@r;
+        margin-bottom: 10/@r;
+      }
+      .three_pic{
+        display: flex;
+        div{
+          flex: 1;
+          &:nth-child(2){
+            margin: 0 10/@r;
+          }
+          img{
+            width: 100%;
+          }
+        }
+      }
+      .comment_box{
+        margin-top: 10/@r;
+        text-align: right;
+        width: 100%;
+        em{
+          font-style: normal;
+          font-size: 20/@r;
+        }
       }
     }
   }

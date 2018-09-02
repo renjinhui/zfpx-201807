@@ -606,6 +606,8 @@ header nav a {
 .news_box .listBox a div.text_box {
   width: 100%;
   flex: 1;
+  min-height: 1.33333333rem;
+  position: relative;
 }
 .news_box .listBox a div.text_box p {
   font-size: 0.45333333rem;
@@ -614,6 +616,8 @@ header nav a {
 }
 .news_box .listBox a div.text_box .comment_box {
   color: #888;
+  position: absolute;
+  bottom: 0.17333333rem;
   width: 100%;
   text-align: right;
   font-size: 0.26666667rem;
@@ -625,4 +629,36 @@ header nav a {
   width: 2.66666667rem;
   height: 1.78666667rem;
   margin-right: 0.33333333rem;
+}
+.news_box .listBox a .img_box img {
+  width: 100%;
+}
+.news_box .listBox a.three_box {
+  display: block;
+}
+.news_box .listBox a.three_box p {
+  font-size: 0.45333333rem;
+  line-height: 0.64rem;
+  margin-bottom: 0.13333333rem;
+}
+.news_box .listBox a.three_box .three_pic {
+  display: flex;
+}
+.news_box .listBox a.three_box .three_pic div {
+  flex: 1;
+}
+.news_box .listBox a.three_box .three_pic div:nth-child(2) {
+  margin: 0 0.13333333rem;
+}
+.news_box .listBox a.three_box .three_pic div img {
+  width: 100%;
+}
+.news_box .listBox a.three_box .comment_box {
+  margin-top: 0.13333333rem;
+  text-align: right;
+  width: 100%;
+}
+.news_box .listBox a.three_box .comment_box em {
+  font-style: normal;
+  font-size: 0.26666667rem;
 }
