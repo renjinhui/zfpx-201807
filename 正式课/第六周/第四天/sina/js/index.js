@@ -1,6 +1,8 @@
 
 var $oul = $('.ulBox'),
-    $listBox = $('.listBox');
+    $listBox = $('.listBox'),
+    $tabs = $('.tab_box ul li'),
+    $tabContents = $('.tab_content');
 
 /*
 * 实现 轮播图
@@ -177,4 +179,15 @@ function giveListHtml(data) {
 }
 listPro.then(function (data) {
     giveListHtml(data);
+});
+
+/*
+* 三个  tab 绑定点击事件
+* */
+
+$tabs.on('touchend',function () {
+    console.log(this);
+    $(this).addClass('current').siblings().removeClass('current');
+    $tabContents.
+    eq($(this).index()).show().siblings('.tab_content').hide();
 });
