@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>珠峰培训</title>
+</head>
+<body>
+    <div id="div1">珠峰培训</div>
+</body>
+</html>
+<script src="js/ajax.js"></script>
+<script>
+/*var p1 = new Promise(function (resolve,reject) {
+    ajax({
+        type:'get',
+        url:'./1.json',
+        success:function(data){
+            resolve(data);
+        },
+        error:reject
+    });
+    console.log(111)
+});
+var p2 = new Promise(function (resolve,reject) {
+    ajax({
+        type:'post',
+        url:'./2.xml',
+        dataType:'xml',
+        success:function(data){
+            resolve(data);
+        },
+        error:reject
+    });
+    console.log(222);
+});
+Promise.all([p1,p2]).then((res)=>{
+    console.log(res);
+}).catch((e)=>{
+    console.log(e);
+})*/
+
+let p = new Promise(function (resolve, reject) {
+    setTimeout(function () {
+        resolve('成功了')
+    },1000)
+});
+p.then(function (data) {
+    return setTimeout(function () {
+        console.log(data);
+
+    },1000)
+}, function (res) {
+    console.log(res);
+});
+</script>  
