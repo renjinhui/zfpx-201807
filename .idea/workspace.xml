@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9cbfaad9-242d-46a5-99cf-24ae00162b6f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/正式课/第七周/第四天/Promise/Promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/正式课/第七周/第四天/Promise/Promise.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,7 +32,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/正式课/第二周/第五天/huawei/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
+            <state>
               <caret line="63" column="36" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="42" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -145,11 +146,13 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/正式课/第七周/第四天/node/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="261" />
-    <option name="y" value="72" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
     <option name="width" value="1563" />
     <option name="height" value="1080" />
   </component>
@@ -159,6 +162,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,7 +224,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -273,16 +276,18 @@
       <workItem from="1533343704149" duration="33316000" />
       <workItem from="1533432560813" duration="27968000" />
       <workItem from="1533522928066" duration="82000" />
+      <workItem from="1536558827796" duration="10000" />
+      <workItem from="1536629480318" duration="12000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261219000" />
+    <option name="totallyTimeSpent" value="261241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.264637" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21233411" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -432,10 +437,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="83" column="9" lean-forward="true" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
-          <folding>
-            <element signature="n#ul#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#1138#1662#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -527,9 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
           <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
-          <folding>
-            <element signature="n#ul#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -621,13 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-          <folding>
-            <element signature="e#503#525#0" />
-            <element signature="e#589#620#0" />
-            <element signature="e#809#1229#0" />
-            <element signature="e#843#873#0" />
-            <element signature="e#977#998#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -678,7 +669,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/正式课/第二周/第五天/huawei/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
+        <state>
           <caret line="63" column="36" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="42" />
           <folding>
             <element signature="n#!!doc" expanded="true" />

@@ -39,10 +39,18 @@ Promise.prototype.then = function (res,rej) {
     let self = this;
     console.log(self.status);
     if(self.status == 'resolved'){
-        res(self.value);
+        // res(self.value);
+        return new Promise(function (res2,rej2) {
+            let val = res(self.value);
+            res2(val);
+        })
     }
     if(self.status == 'rejected'){
-        rej(self.reason);
+        // rej(self.reason);
+        return new Promise(function (res2,rej2) {
+            let val = rej(self.value);
+            res2(val)
+        })
     }
 
     if(self.status == 'pending'){
@@ -54,15 +62,18 @@ Promise.prototype.then = function (res,rej) {
 
 var p2 = new Promise(function (res,rej) {
     // console.log(q);
-    setTimeout(function () {
-        res(123);
-    },2000);
+    // setTimeout(function () {
+    //     res(123);
+    // },2000);
+    res(123);
     console.log(1234);
 }).then((data)=>{
     console.log(data);
+    return 666
 },(res)=>{
     console.log(res);
-});
+}).then((data)=>{
+    console.log(data);});
 // console.log(p2.status);
 
 
