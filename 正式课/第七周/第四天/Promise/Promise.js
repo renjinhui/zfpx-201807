@@ -44,36 +44,47 @@ Promise.prototype.then = function (res,rej) {
             let val = res(self.value);
             res2(val);
         })
+        //
     }
     if(self.status == 'rejected'){
         // rej(self.reason);
         return new Promise(function (res2,rej2) {
-            let val = rej(self.value);
-            res2(val)
+            let val = rej(self.reason);
+            res2(val);
         })
     }
 
     if(self.status == 'pending'){
         //处理异步函数的；
-        self.resCallbacks.push(res);//把成功的回调函数存储到self.resCallbacks
-        self.rejCallbacks.push(rej);//把失败的回调函数存储到self.rejCallbacks
+        // self.resCallbacks.push(res);//把成功的回调函数存储到self.resCallbacks
+        // self.rejCallbacks.push(rej);//把失败的回调函数存储到self.rejCallbacks
+        return new Promise(function (res2,rej2) {
+            self.resCallbacks.push(function (value) {
+                let val = res(value);
+                res2(val);
+            });
+            self.rejCallbacks.push(function(reason){
+                let val = rej(reason);
+                res2(val)
+            });
+        })
     }
 };
 
 var p2 = new Promise(function (res,rej) {
     // console.log(q);
-    // setTimeout(function () {
-    //     res(123);
-    // },2000);
-    res(123);
-    console.log(1234);
+    setTimeout(function () {
+        res(123);
+    },2000);
+    // res(123);
+    // console.log(1234);
 }).then((data)=>{
     console.log(data);
     return 666
 },(res)=>{
     console.log(res);
 }).then((data)=>{
-    console.log(data);});
-// console.log(p2.status);
+    console.log(data);
+},()=>{});
 
 
