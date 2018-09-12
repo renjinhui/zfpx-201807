@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>珠峰培训</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div id="app">
+        <table class="table table-bordered text-center table-striped">
+            <thead>
+                <tr>
+                    <th><input type="checkbox">全选</th>
+                    <th>商品</th>
+                    <th></th>
+                    <th></th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>小计</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="item in list">
+                    <td><input type="checkbox"></td>
+                    <td>
+                        <!--行内属性  VUE中用 v-bind:src= 去绑定
+                         简写 用 :src=
+                         -->
+                        <img :src="item.pic" alt="">
+                    </td>
+                    <td><p>{{item.title}}</p></td>
+                    <td><p>{{item.desc}}</p></td>
+                    <td>
+                        {{(item.price/100).toFixed(2)}}
+                    </td>
+                    <td><input type="text" v-model="item.count"></td>
+                    <td>{{(item.count*item.price/100).toFixed(2)}}</td>
+                    <td><button class="btn btn-danger">删除</button></td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+</body>
+</html>
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el:'#app',
+        data:{
+            list:[{
+                pic:'https://img10.360buyimg.com/cms/s80x80_jfs/t20599/5/1848245261/259599/458bc9b5/5b39951dNfa084179.jpg',
+                title:'郎酒123',
+                desc:'颜色：红色',
+                price:18000,
+                count:1,
+                isSelect:true
+            },]
+        }
+    })
+</script>  
