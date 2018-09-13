@@ -39,7 +39,7 @@
             </td>
             <td><input type="text"  v-model="item.count" @input.stop="change(item)"></td>
             <td>{{item.count*item.price | toFixed()}}</td>
-            <td><button class="btn btn-danger" @click="remove(item)">删除</button></td>
+            <td><button :class="item" class="btn btn-danger" @click="remove(item)">删除</button></td>
         </tr>
         <tr>
             <td colspan="8" class="text-right">
