@@ -16,8 +16,15 @@
             opacity: 0;
             left:50px
         }
-        .move-enter-active,.move-leave-active{
+        .move-enter-to{
             transition: 5s linear;
+        }
+
+
+
+
+        .move-leave-active{
+            transition: 1s ease-in;
         }
         .move-leave-active{
             opacity: 0;
@@ -32,7 +39,13 @@
     <div id="app">
         <button @click="flag = !flag">按钮</button>
         <transition name="move">
-            <div class="bg" v-show="flag"></div>
+            <div class="bg" v-show="flag">
+                <div>gdfgdgdgf</div>
+                <div>gdfgdgdgf</div>
+                <div>gdfgdgdgf</div>
+                <div>gdfgdgdgf</div>
+                <div>gdfgdgdgf</div>
+            </div>
         </transition>
 
 
@@ -54,7 +67,7 @@
     let vm = new Vue({
         el: '#app',
         data: {
-            flag:true
+            flag:false
         },
         methods: {}
     })

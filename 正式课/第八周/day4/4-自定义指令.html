@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>珠峰培训</title>
+</head>
+<body>
+    <div id="app">
+        <button @click="fn">按钮</button>
+        <input type="text" v-focus1="flag">
+        <!--<div type="text" v-focus1="flag">dddd</div>-->
+    </div>
+</body>
+</html>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            flag:true
+        },
+        directives:{
+            focus1(el,obj){
+                if(obj.value){
+                    setTimeout(function () {
+                        el.focus()
+                    },100)
+                    // el.focus();
+                }
+            }
+        },
+        methods: {
+            fn(){
+                this.flag = !this.flag
+            }
+        }
+    })
+</script>  
