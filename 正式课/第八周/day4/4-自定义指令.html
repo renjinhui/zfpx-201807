@@ -8,6 +8,8 @@
     <div id="app">
         <button @click="fn">按钮</button>
         <input type="text" v-focus1="flag">
+        <div v-color="col">珠峰培训</div>
+        <div v-drag='true'>珠峰</div>
         <!--<div type="text" v-focus1="flag">dddd</div>-->
     </div>
 </body>
@@ -17,16 +19,21 @@
     let vm = new Vue({
         el: '#app',
         data: {
-            flag:true
+            flag:true,
+            col:'red'
         },
         directives:{
             focus1(el,obj){
                 if(obj.value){
                     setTimeout(function () {
                         el.focus()
-                    },100)
+                    },10)
                     // el.focus();
                 }
+            },
+            color(el,obj){
+                // 改变字体颜色
+                el.style.color = obj.value;
             }
         },
         methods: {

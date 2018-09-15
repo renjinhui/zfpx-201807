@@ -108,21 +108,28 @@
         <!--<input type="text" class="inp" v-model.trim="todo" @keyup.13="add">-->
         <input type="text" class="inp" v-model="todo" @keyup.13="add">
         <ul class="todo_list">
-            <li v-for="(item,i) in ary" @dblclick="show(item)">
+            <li v-for="(item,i) in todoAry" @dblclick="show(item)">
                 <!-- 有没有删除线 跟这一项有没有选中（item.isSelect）有直接关系 -->
                 <!--<span :class="item.isSelect ? 'text_del' : ''">-->
                 <span :class="{text_del:item.isSelect}" v-show="!item.isShow">
                     <input type="checkbox" v-model="item.isSelect">
                     {{item.title}}
                 </span>
-                <input type="text" v-show="item.isShow">
+                <!--@blur="item.isShow = !item.isShow"-->
+                <input type="text"
+                       v-show="item.isShow"
+                       v-focus="item.isShow"
+                       v-model="item.title"
+                       @blur="item.isShow = false"
+                       @keyup.13="item.isShow= false">
                 <button @click="remove(item)">删除</button>
             </li>
         </ul>
         <ul class="hash_tab">
-            <li class="current"><a>全部任务</a></li>
-            <li><a>已完成</a></li>
-            <li><a>未完成</a></li>
+            <!--用当前页面的路由跟对应A标签的href中的路由作比较-->
+            <li :class="{current: hash === 'all'}"><a href="#/all">全部任务</a></li>
+            <li :class="{current: hash === 'finished'}"><a href = "#/finished">已完成</a></li>
+            <li :class="{current: hash === 'unfinished'}"><a href = "#/unfinished">未完成</a></li>
         </ul>
     </div>
 </div>
