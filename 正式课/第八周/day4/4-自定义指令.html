@@ -9,7 +9,7 @@
         <button @click="fn">按钮</button>
         <input type="text" v-focus1="flag">
         <div v-color="col">珠峰培训</div>
-        <div v-drag='true'>珠峰</div>
+        <!--<div v-drag='true'>珠峰</div>-->
         <!--<div type="text" v-focus1="flag">dddd</div>-->
     </div>
 </body>
@@ -22,13 +22,19 @@
             flag:true,
             col:'red'
         },
+        mounted(){
+            // debugger
+        },
         directives:{
             focus1(el,obj){
+                // console.log(arguments);
                 if(obj.value){
                     setTimeout(function () {
                         el.focus()
                     },10)
                     // el.focus();
+                    // debugger
+                    console.log(arguments);
                 }
             },
             color(el,obj){
