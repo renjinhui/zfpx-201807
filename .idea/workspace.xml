@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9cbfaad9-242d-46a5-99cf-24ae00162b6f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/正式课/第八周/day5/10-dialog.html" beforeDir="false" afterPath="$PROJECT_DIR$/正式课/第八周/day5/10-dialog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/正式课/第八周/day5/7-组件的数据传递.html" beforeDir="false" afterPath="$PROJECT_DIR$/正式课/第八周/day5/7-组件的数据传递.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/正式课/第九周/day1/8-slot.html" beforeDir="false" afterPath="$PROJECT_DIR$/正式课/第九周/day1/8-slot.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,23 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="7-mouted.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/正式课/第九周/day1/7-mouted.html">
+      <file leaf-file-name="11-vue-router.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/正式课/第九周/day1/11-vue-router.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="150">
+              <caret line="11" column="53" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="8-slot.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/正式课/第九周/day1/8-slot.html">
+      <file leaf-file-name="vue-router.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/正式课/第九周/node_modules/vue-router/dist/vue-router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
-              <folding>
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="279">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -56,10 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/正式课/第二周/第四天/8-练习2.html" />
-        <option value="$PROJECT_DIR$/正式课/第二周/第四天/9-hasOwnproperty.html" />
-        <option value="$PROJECT_DIR$/正式课/第二周/第四天/10-链式写法.html" />
-        <option value="$PROJECT_DIR$/正式课/第二周/第四天/11-call_apply_bind.html" />
         <option value="$PROJECT_DIR$/正式课/第二周/第四天/练习.js" />
         <option value="$PROJECT_DIR$/正式课/第二周/第五天/复习.html" />
         <option value="$PROJECT_DIR$/正式课/第二周/第五天/1-array.html" />
@@ -107,6 +99,10 @@
         <option value="$PROJECT_DIR$/正式课/第九周/day1/6-v-model.html" />
         <option value="$PROJECT_DIR$/正式课/第九周/day1/7-mouted.html" />
         <option value="$PROJECT_DIR$/正式课/第九周/day1/8-slot.html" />
+        <option value="$PROJECT_DIR$/正式课/第九周/day1/8-slot2.html" />
+        <option value="$PROJECT_DIR$/正式课/第九周/day1/9-component.html" />
+        <option value="$PROJECT_DIR$/正式课/第九周/day1/10-eventBus.html" />
+        <option value="$PROJECT_DIR$/正式课/第九周/day1/11-vue-router.html" />
       </list>
     </option>
   </component>
@@ -171,20 +167,24 @@
               <item name="zfpx-201807" type="462c0819:PsiDirectoryNode" />
               <item name="正式课" type="462c0819:PsiDirectoryNode" />
               <item name="第九周" type="462c0819:PsiDirectoryNode" />
-              <item name="day1" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zfpx-201807" type="b2602c69:ProjectViewProjectNode" />
               <item name="zfpx-201807" type="462c0819:PsiDirectoryNode" />
               <item name="正式课" type="462c0819:PsiDirectoryNode" />
-              <item name="第八周" type="462c0819:PsiDirectoryNode" />
+              <item name="第九周" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-router" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zfpx-201807" type="b2602c69:ProjectViewProjectNode" />
               <item name="zfpx-201807" type="462c0819:PsiDirectoryNode" />
               <item name="正式课" type="462c0819:PsiDirectoryNode" />
-              <item name="第八周" type="462c0819:PsiDirectoryNode" />
-              <item name="day5" type="462c0819:PsiDirectoryNode" />
+              <item name="第九周" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-router" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -200,15 +200,17 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\珠峰培训\第七期\zfpx-201807\正式课\第二周\第三天\huawei" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\珠峰培训\第七期\zfpx-201807\正式课\第九周" />
       <recent name="C:\珠峰培训\第七期\zfpx-201807\正式课\第二周\第五天\huawei" />
       <recent name="C:\珠峰培训\第七期\zfpx-201807\正式课\第二周\第五天\huawei\data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\珠峰培训\第七期\zfpx-201807\正式课\第二周\第三天\huawei" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -258,25 +260,25 @@
       <workItem from="1537014444399" duration="28758000" />
       <workItem from="1537097131282" duration="1668000" />
       <workItem from="1537156632571" duration="243000" />
-      <workItem from="1537234036244" duration="12775000" />
+      <workItem from="1537234036244" duration="24424000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="331243000" />
+    <option name="totallyTimeSpent" value="342892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.0" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.013270882" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.27377048" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.41147542" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.93442625" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -295,41 +297,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/正式课/第二周/第五天/1-array.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第二周/第五天/5-forEach.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第二周/第五天/6-继承.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第二周/第五天/4-forEach_map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="65" column="17" lean-forward="true" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第二周/第五天/9-class继承.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/正式课/第二周/第五天/8-寄生组合式.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -654,13 +621,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/day1/8-slot2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="66" column="19" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#slot#0;n#footer#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/正式课/第九周/day1/8-slot.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+        <state relative-caret-position="-124">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/day1/9-component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+          <folding>
+            <element signature="e#299#340#0" />
+            <element signature="e#357#398#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/day1/10-eventBus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="e#392#416#0" />
+            <element signature="e#545#612#0" />
+            <element signature="e#847#1278#0" />
+            <element signature="e#886#910#0" />
+            <element signature="e#586#610#0" />
+            <element signature="e#803#870#0" />
+            <element signature="e#396#536#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/node_modules/vue-router/dist/vue-router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/day1/11-vue-router.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="53" />
         </state>
       </provider>
     </entry>
