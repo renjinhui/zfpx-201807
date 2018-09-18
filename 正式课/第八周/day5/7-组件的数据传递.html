@@ -6,8 +6,8 @@
 </head>
 <body>
     <div id="app">
-        {{ary}}
-        <son :ary="ary" qqq="36" :w="12"></son>
+        {{obj}}
+        <son :ary="ary" :obj="obj" :w="12"></son>
     </div>
 </body>
 </html>
@@ -24,13 +24,14 @@
         el: '#app',
         data: {
             n:0,
-            ary:[1,2,3,4]
+            ary:[1,2,3,4],
+            obj:{name:'zfpx'}
         },
         methods: {},
         components:{
             son:{
                 template:'<div><h1>this is a son</h1>{{arr2}} <button @click="fn">按钮</button></div>',
-                props:['ary','qqq','w'],
+                props:['ary','obj','w'],
                 data(){
                     return{
                         n:10,
@@ -54,6 +55,7 @@
                         // this.arr.pop();
                         // this.ary.pop();
                         // this.ary = [1,2,4]
+                        this.obj.name = '123'
                     }
                 }
             }

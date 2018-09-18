@@ -39,31 +39,34 @@
     </style>
 </head>
 <body>
-    <div id="app">
-        <button @click="flag = !flag">显示弹框</button>
-        <button @click="flag1 = !flag1">显示弹框1</button>
-        <model v-show="flag"  :data="modelData"  @my-show="fn"></model>
-        <model v-show="flag1"  :data="modelData"  @my-show="flag1 = !flag1"></model>
-    </div>
+<div id="app">
+    <button @click="flag = !flag">显示弹框</button>
+    <model v-show="flag"  :data="modelData"  @my-show="fn">
+        <div class="title">这是个title</div>
+        <div class="my-content">组件内容</div>
+        <h2 slot="qqq">slot对应</h2>
+        <div>这个是在 qqq 下方的</div>
+    </model>
+</div>
 </body>
 </html>
 <template id="mask">
     <div class="mask">
         <div class="content">
-            <header>{{data.title||'默认标题'}}</header>
-            <main>{{data.content || '默认主体'}}</main>
-            <footer><button @click="cancel">取消</button></footer>
+            <!-- slot 会把这个组件包含的结构整个拿过来 -->
+            <h1>title</h1>
+            <slot name="default"></slot>
+            <h3>========================</h3>
+            <slot name="qqq">
+                <div>slot</div>
+            </slot>
+            <!--<slot></slot> 这种写法 其实带着一个 默认的 name 属性  值式 default-->
+            <footer>这个尾部</footer>
         </div>
     </div>
 </template>
-<script src="node_modules/vue/dist/vue.js"></script>
+<script src="../node_modules/vue/dist/vue.js"></script>
 <script>
-    /*
-    * 父传子   通过属性传递  子组件通过 props 接收
-    *
-    * 子传父   通过自定义事件  @my-name="fn" ---> this.$emit('my-name',,,,,);
-    *
-    * */
     let model = {
         template:'#mask',
         data(){
@@ -74,7 +77,6 @@
         props:['data'],
         methods:{
             cancel(){
-                // 点击弹框取消时执行的函数
                 this.$emit('my-show',false);
             }
         }
@@ -86,7 +88,7 @@
             flag1: false,
             modelData:{
                 title:'这个是父组件传递title',
-                content:"这时父组件传递的内容部分"
+                content:"<h1> 自定义的结构</h1>"
             }
         },
         methods: {
