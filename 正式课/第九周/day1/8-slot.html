@@ -42,8 +42,11 @@
 <div id="app">
     <button @click="flag = !flag">显示弹框</button>
     <model v-show="flag"  :data="modelData"  @my-show="fn">
-        <div class="title">这是个title</div>
-        <div class="my-content">组件内容</div>
+        <template>
+            <div class="title">这是个title</div>
+            <div class="my-content">组件内容</div>
+        </template>
+
         <h2 slot="qqq">slot对应</h2>
         <div>这个是在 qqq 下方的</div>
     </model>

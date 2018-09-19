@@ -11,9 +11,7 @@
         <!--<a href="#/list">列表页</a>-->
         <router-link to="/home" tag="button" qq="123">首页</router-link>
         <router-link to="/list">列表页</router-link>
-        <keep-alive>
-            <router-view></router-view>
-        </keep-alive>
+
     </div>
 </body>
 </html>
@@ -24,6 +22,9 @@
     * 单页面应用 spa ---> single page web application
     * vue-router
     * */
+    window.onhashchange=()=>{
+        console.log(2);
+    };
     let home = {
         template:'<h2>首页</h2>',
         destroyed(){
