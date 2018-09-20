@@ -10,19 +10,21 @@
     </style>
 </head>
 <body>
-    <div id="app">
-        <input type="text" placeholder="请输入姓名" v-model="name">
-        <input type="number" placeholder="请输入年龄" v-model="age">
-        <button @click="add">添加</button>
-        <list1></list1>
-        <list2></list2>
-    </div>
+<div id="app">
+    <input type="text" placeholder="请输入姓名" v-model="name">
+    <input type="number" placeholder="请输入年龄" v-model="age">
+    <button @click="add">添加</button>
+    <list1></list1>
+    <list2></list2>
+</div>
 </body>
 </html>
 <template id="list1">
     <ul class="lt">
         <h2>成年</h2>
-        {{qqq}}
+        <!--{{qqq}}-->
+        <!--{{$store.getters.list1Ary}}-->
+        {{list1Ary}}
         <!--{{www}}{{eee}}-->
         <li v-for="v in arr">name:{{v.name}}-----age:{{v.age}}</li>
     </ul>
@@ -53,6 +55,7 @@
         },
         computed:{
             arr(){
+                // 大前提 是  这个 arr 必须用到视图上
                 return this.$store.state.ary.filter((item)=>{
                     return item.age >= 18
                 })
@@ -61,7 +64,9 @@
             ...Vuex.mapState({
                 // qqq: state => state.qqq + 1111,
                 qqq(state){ state.qqq + 1111}
-            })
+            }),
+            ...Vuex.mapGetters(['list1Ary'])
+            // list1Ary(){return this.$store.getters.qqq}
         }
         // computed:Vuex.mapState(['qqq','www','eee'])
         // 'qqq' ----> qqq(){return this.$store.state.qqq}
@@ -86,6 +91,15 @@
                 {name:'Jerry',age:18},
                 {name:'rose',age:10}
             ]
+        },
+        getters:{
+            // 他就是一个 computed 计算属性
+            list1Ary(state){// 传进来的参数 就是咱们vuex 中的state
+                console.log(state);
+                return state.ary.filter((item)=>{
+                    return item.age >=18;
+                })
+            }
         },
         mutations:{
             changeAry(state,obj){
