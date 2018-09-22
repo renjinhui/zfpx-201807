@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import Home from '@/components/home' // 默认只找index.vue
+import Home from '@/components/home/index.vue' // 默认只找index.vue
 import List from '@/components/list'
 import Collect from '@/components/collect'
 import Add from '@/components/add'

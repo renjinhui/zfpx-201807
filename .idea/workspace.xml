@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9cbfaad9-242d-46a5-99cf-24ae00162b6f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/正式课/第九周/day3/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/正式课/第九周/day3/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/正式课/第九周/vue-book/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/正式课/第九周/vue-book/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/正式课/第九周/vue-book/build/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/正式课/第九周/vue-book/build/webpack.base.conf.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/正式课/第九周/vue-book/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/正式课/第九周/vue-book/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/正式课/第九周/vue-book/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/正式课/第九周/vue-book/src/components/HelloWorld.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/正式课/第九周/vue-book/src/components/home/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/正式课/第九周/vue-book/src/components/home/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/正式课/第九周/vue-book/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/正式课/第九周/vue-book/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/正式课/第九周/vue-book/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/正式课/第九周/vue-book/src/router/index.js" afterDir="false" />
     </list>
@@ -21,68 +21,84 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="6" column="82" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="33" />
+            <state relative-caret-position="212">
+              <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/package.json">
+      <file leaf-file-name="HelloWorld.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/HelloWorld.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="279">
+              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/router/index.js">
+      <file leaf-file-name="tabs.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/common/tabs.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="39" column="17" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="17" />
+            <state relative-caret-position="312">
+              <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
               <folding>
-                <element signature="e#0#21#0" expanded="true" />
-                <element signature="e#157#193#0" expanded="true" />
-                <element signature="e#400#444#0" />
-                <element signature="e#448#492#0" />
-                <element signature="e#496#545#0" />
-                <element signature="e#549#591#0" />
+                <element signature="n#div#0;n#template#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloWorld.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/HelloWorld.vue">
+      <file leaf-file-name="title.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/common/title.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+            <state relative-caret-position="93">
+              <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="banner.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/home/banner.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/home/list.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+              <folding>
+                <element signature="e#200#214#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="book.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/home/book.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="2" column="56" lean-forward="true" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/home/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <folding>
+                <element signature="e#115#154#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,6 +121,9 @@
       <find>vuex</find>
       <find>Vuex.S</find>
       <find>Vuex.Store</find>
+      <find>utils</find>
+      <find>cssLoaders</find>
+      <find>vueLoaderConfig</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,12 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/正式课/第九周/day2/2-复习.html" />
-        <option value="$PROJECT_DIR$/正式课/第九周/day2/3-router.html" />
-        <option value="$PROJECT_DIR$/正式课/第九周/day2/4-rouler-link.html" />
-        <option value="$PROJECT_DIR$/正式课/第九周/day2/5-router-link2.html" />
-        <option value="$PROJECT_DIR$/正式课/第九周/day2/6-编程式的路由切换.html" />
-        <option value="$PROJECT_DIR$/正式课/第九周/day2/7-路由的重定向.html" />
         <option value="$PROJECT_DIR$/正式课/第九周/day2/8-路由的嵌套.html" />
         <option value="$PROJECT_DIR$/正式课/第九周/day2/9-多视图.html" />
         <option value="$PROJECT_DIR$/正式课/第九周/day3/src/b.js" />
@@ -157,13 +170,19 @@
         <option value="$PROJECT_DIR$/正式课/第九周/vue-book/package.json" />
         <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/components/add/index.vue" />
         <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/components/collect/index.vue" />
-        <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/components/home/index.vue" />
         <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/components/list/index.vue" />
-        <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/App.vue" />
-        <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/router/index.js" />
         <option value="$PROJECT_DIR$/正式课/第九周/vue-book/index.html" />
+        <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/router/index.js" />
+        <option value="$PROJECT_DIR$/正式课/第九周/vue-book/build/webpack.base.conf.js" />
         <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/main.js" />
         <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/components/HelloWorld.vue" />
+        <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/App.vue" />
+        <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/common/title.vue" />
+        <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/components/home/banner.vue" />
+        <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/components/home/index.vue" />
+        <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/components/home/book.vue" />
+        <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/common/tabs.vue" />
+        <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/components/home/list.vue" />
       </list>
     </option>
   </component>
@@ -248,6 +267,34 @@
               <item name="第九周" type="462c0819:PsiDirectoryNode" />
               <item name="vue-book" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zfpx-201807" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zfpx-201807" type="462c0819:PsiDirectoryNode" />
+              <item name="正式课" type="462c0819:PsiDirectoryNode" />
+              <item name="第九周" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-book" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zfpx-201807" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zfpx-201807" type="462c0819:PsiDirectoryNode" />
+              <item name="正式课" type="462c0819:PsiDirectoryNode" />
+              <item name="第九周" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-book" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zfpx-201807" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zfpx-201807" type="462c0819:PsiDirectoryNode" />
+              <item name="正式课" type="462c0819:PsiDirectoryNode" />
+              <item name="第九周" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-book" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zfpx-201807" type="b2602c69:ProjectViewProjectNode" />
@@ -353,18 +400,18 @@
       <workItem from="1537538903828" duration="1335000" />
       <workItem from="1537540811682" duration="633000" />
       <workItem from="1537543615313" duration="620000" />
-      <workItem from="1537579460090" duration="25015000" />
+      <workItem from="1537579460090" duration="33001000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="432075000" />
+    <option name="totallyTimeSpent" value="440061000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.20686963" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.13973458" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.3295082" />
@@ -395,76 +442,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/day3/dist/index.js" />
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/day3/webpack.config.js" />
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/day3/src/index.js" />
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/day3/index.html" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/day3/1-复习.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="95" column="15" lean-forward="true" selection-start-line="95" selection-start-column="15" selection-end-line="95" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/day2/8-路由的嵌套.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/node_modules/vue/dist/vue.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-744" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/node_modules/vue/dist/vue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-744" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/node_modules/vuex/dist/vuex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="169" column="37" selection-start-line="169" selection-start-column="27" selection-end-line="169" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/day3/6-actions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="40" column="21" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="40" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/day3/5-getters.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/day3/4-getters.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="94" column="15" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/day3/3-state.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="53" column="18" lean-forward="true" selection-end-line="119" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/正式课/第九周/day3/2-vuex介绍.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -581,13 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/正式课/第九周/day3/node_modules/webpack/bin/webpack.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
@@ -671,20 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/build/webpack.base.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="35" column="27" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/add/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
@@ -699,27 +655,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/home/index.vue">
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/list/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="279">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -730,32 +669,158 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/build/webpack.prod.conf.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/config/dev.env.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/config/prod.env.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="28" column="15" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/build/webpack.dev.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="85" column="10" lean-forward="true" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/build/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-41" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/build/check-versions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1395" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/build/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="60" column="41" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/build/vue-loader.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="17" />
+        <state relative-caret-position="434">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
             <element signature="e#157#193#0" expanded="true" />
-            <element signature="e#400#444#0" />
-            <element signature="e#448#492#0" />
-            <element signature="e#496#545#0" />
-            <element signature="e#549#591#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/list/index.vue">
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="217">
+          <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#140#161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/HelloWorld.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+        <state relative-caret-position="279">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/common/title.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/home/banner.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/home/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding>
+            <element signature="e#115#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/home/book.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="2" column="56" lean-forward="true" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/common/tabs.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+          <folding>
+            <element signature="n#div#0;n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/home/list.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="e#200#214#0" />
+          </folding>
         </state>
       </provider>
     </entry>

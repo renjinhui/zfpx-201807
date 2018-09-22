@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-// import 'http://at.alicdn.com/t/font_848761_s77a10acb5.css'
+// import 'http://at.alicdn.com/t/font_848761_s77a10acb5.css' //不好使
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
