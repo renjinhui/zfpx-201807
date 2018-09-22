@@ -13,23 +13,25 @@ const routes = [
   {
     path: '/',
     name: 'HelloWorld',
-    component: HelloWorld
-  },
-  {
-    path: '/home',
-    component: Home
-  },
-  {
-    path: '/list',
-    component: List
-  },
-  {
-    path: '/collect',
-    component:Collect
-  },
-  {
-    path: '/add',
-    component: Add
+    component: HelloWorld,
+    children:[
+      {
+        path: '/home',
+        component: Home
+      },
+      {
+        path: '/list',
+        component: List
+      },
+      {
+        path: '/collect',
+        component:Collect
+      },
+      {
+        path: '/add',
+        component: Add
+      }
+    ]
   }
 ];
 
