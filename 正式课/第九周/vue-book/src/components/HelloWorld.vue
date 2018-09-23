@@ -1,6 +1,10 @@
 <template>
   <div class="hello">
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
+    <!--<router-view></router-view>-->
+    <!--加这个 keep-alive 是为了保证 第一次进来加载数据-->
     <Tab></Tab>
   </div>
 </template>

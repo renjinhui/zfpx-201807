@@ -2,7 +2,6 @@
     <div class="banner">
       <!--<mySwiper :ary="arr" v-if="arr.length"></mySwiper>-->
       <mySwiper :ary="arr"></mySwiper>
-      {{$store.state.count}}
     </div>
 </template>
 
