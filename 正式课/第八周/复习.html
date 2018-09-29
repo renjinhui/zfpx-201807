@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<body>
+    <!--  -->
+    <template v-if="false">  <!-- 只能用v-if 不能用v-show -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </template>
+    <div id="app">
+        <h2 v-for='val in ary'>{{val}}</h2>
+        <button @click.middle="add">排序</button>
+        <input type="text" @keyup.13='add'>
+        <!-- <img :src="ary[0]" alt=""  
+        :class="{current:true}"  
+        :style="{fontSize:'20px',color:'#ccc'}"> -->
+        <span v-pre>实时十分广泛法国皇帝谷歌</span>
+    </div>
+</body>
+</html>
+<script>
+    let vm = new Vue({
+        el:'#app',
+        data:{
+            ary:[1,2,3,4,5]
+        },
+        methods:{
+            add(){
+                this.ary.reverse();
+            }
+        }
+    })
+</script>

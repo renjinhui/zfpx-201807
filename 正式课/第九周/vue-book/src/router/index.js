@@ -5,6 +5,7 @@ import Home from '@/components/home/index.vue' // 默认只找index.vue
 import List from '@/components/list'
 import Collect from '@/components/collect'
 import Add from '@/components/add'
+// const Home = () => import('@/components/HelloWorld')
 
 
 Vue.use(Router);

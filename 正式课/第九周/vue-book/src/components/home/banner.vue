@@ -22,6 +22,7 @@
           mySwiper
         },
         created(){
+          debugger
           this.$store.dispatch('getBannerData');
           // axios.get('/bannerlist').then((data)=>{
           //   console.log(data);

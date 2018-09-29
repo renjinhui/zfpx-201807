@@ -46,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/dist/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret column="623" selection-start-column="623" selection-end-column="623" />
+            <state relative-caret-position="217">
+              <caret column="510" lean-forward="true" selection-start-column="510" selection-end-column="510" />
             </state>
           </provider>
         </entry>
@@ -62,6 +62,18 @@
               <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
               <folding>
                 <element signature="e#123#160#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/router/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,10 +91,15 @@
       <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/add/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+            <state relative-caret-position="181">
+              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding>
+                <element signature="e#420#502#0" />
+                <element signature="e#459#487#0" />
+                <element signature="e#471#496#0" />
+                <element signature="e#789#815#0" />
                 <element signature="e#979#1138#0" />
+                <element signature="e#759#769#0" />
                 <element signature="e#821#835#0" />
                 <element signature="e#885#899#0" />
               </folding>
@@ -180,7 +197,6 @@
         <option value="$PROJECT_DIR$/正式课/第九周/day4/src/index.js" />
         <option value="$PROJECT_DIR$/正式课/第九周/vue-book/package.json" />
         <option value="$PROJECT_DIR$/正式课/第九周/vue-book/index.html" />
-        <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/router/index.js" />
         <option value="$PROJECT_DIR$/正式课/第九周/vue-book/build/webpack.base.conf.js" />
         <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/App.vue" />
         <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/common/tabs.vue" />
@@ -206,6 +222,7 @@
         <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/components/collect/listone.vue" />
         <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/vuex/mutations.js" />
         <option value="$PROJECT_DIR$/正式课/第九周/vue-book/dist/index.html" />
+        <option value="$PROJECT_DIR$/正式课/第九周/vue-book/src/router/index.js" />
       </list>
     </option>
   </component>
@@ -282,14 +299,6 @@
               <item name="正式课" type="462c0819:PsiDirectoryNode" />
               <item name="第九周" type="462c0819:PsiDirectoryNode" />
               <item name="vue-book" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zfpx-201807" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zfpx-201807" type="462c0819:PsiDirectoryNode" />
-              <item name="正式课" type="462c0819:PsiDirectoryNode" />
-              <item name="第九周" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-book" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zfpx-201807" type="b2602c69:ProjectViewProjectNode" />
@@ -442,18 +451,18 @@
       <workItem from="1537538903828" duration="1335000" />
       <workItem from="1537540811682" duration="633000" />
       <workItem from="1537543615313" duration="620000" />
-      <workItem from="1537579460090" duration="61483000" />
+      <workItem from="1537579460090" duration="64643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="468543000" />
+    <option name="totallyTimeSpent" value="471703000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.017954722" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2583919" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.3295082" />
@@ -685,16 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -793,18 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/add/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
-          <folding>
-            <element signature="e#979#1138#0" />
-            <element signature="e#821#835#0" />
-            <element signature="e#885#899#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/vuex/actions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
@@ -830,12 +817,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/collect/index.vue">
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/vuex/mutations.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        <state relative-caret-position="314">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret column="510" lean-forward="true" selection-start-column="510" selection-end-column="510" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/add/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding>
-            <element signature="e#123#160#0" expanded="true" />
+            <element signature="e#420#502#0" />
+            <element signature="e#459#487#0" />
+            <element signature="e#471#496#0" />
+            <element signature="e#789#815#0" />
+            <element signature="e#979#1138#0" />
+            <element signature="e#759#769#0" />
+            <element signature="e#821#835#0" />
+            <element signature="e#885#899#0" />
           </folding>
         </state>
       </provider>
@@ -847,17 +855,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/vuex/mutations.js">
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/components/collect/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+        <state relative-caret-position="-31">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="e#123#160#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/dist/index.html">
+    <entry file="file://$PROJECT_DIR$/正式课/第九周/vue-book/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret column="623" selection-start-column="623" selection-end-column="623" />
+        <state relative-caret-position="310">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

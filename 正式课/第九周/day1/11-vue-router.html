@@ -10,7 +10,7 @@
         <!--<a href="#/home">首页</a>-->
         <!--<a href="#/list">列表页</a>-->
         <router-link to="/home" tag="button" qq="123">首页</router-link>
-        <router-link to="/list">列表页</router-link>
+        <router-link to="/list" active-class='current'>列表页</router-link>
 
     </div>
 </body>
@@ -45,7 +45,8 @@
         }
     ];
     let router123 = new VueRouter({
-        routes:qqq
+        routes:qqq,
+        linkActiveClass:'current'
     });
     let vm = new Vue({
         el: '#app',

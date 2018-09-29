@@ -7,6 +7,10 @@
 <body>
     <div id="app">
         {{name}}
+        <!-- 
+            多个checkbox时  需要绑定的 是同一个 数组 
+            还必须有value值
+         -->
         <input type="checkbox" v-model="checked" value=1> 苹果
         <input type="checkbox" v-model="checked" value=2> 栗子
         <input type="checkbox" v-model="checked" value=3> 香蕉

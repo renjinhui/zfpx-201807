@@ -72,7 +72,7 @@
         methods:{
             // getData:function(){},
             getData(){
-                axios.post('./data.json',{name:'zf'}).then((data)=>{
+                axios.get('./data.json',{name:'zf'}).then((data)=>{
                     console.log(data);
                     // 获取到数据之后给谁
                     this.list = data.data;

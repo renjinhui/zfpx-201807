@@ -7,6 +7,10 @@
 <body>
     <div id="app">
         <!--multiple 多选-->
+        <!-- 
+            str 是对应选中的option 的value值 
+            change 事件 只在选中其他option时触发
+         -->
         <select name="" id="select" v-model="str"  @change="change">
             <option value="" disabled>请选择</option>
             <!--disabled 让该项不能点击 原生的属性-->

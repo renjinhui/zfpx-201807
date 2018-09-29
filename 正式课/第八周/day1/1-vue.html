@@ -69,10 +69,11 @@
     // 指令  行内的VUE自定义的属性  vue的指令都是 v- 开头的
     let a = 2018;
     let vm = new Vue({
-        el:'#app', // css 选择器
+        // el:'#app', // css 选择器
+        template:'<h2>dfgdgdgd</h2>',
         data:{
             name:`珠峰培训${a}`, // 最终会把数据方案 vm上;vm代理data中的数据
             age:12
         }
-    })
+    }).$mount('#app')
 </script>

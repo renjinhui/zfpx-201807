@@ -28,7 +28,7 @@
         data: {
             name:'',
             name2:'',
-            // msg2:''
+            msg2:''
         },
         filters:{
             myFilter(val){
@@ -47,7 +47,7 @@
                 },
                 set(){}
             },
-            msg2:{
+            /* msg2:{
                 //computed 不支持异步
                 get(){
                     console.log(this.name2);
@@ -57,24 +57,26 @@
                         if(n <=2 ){
                             this.msg2 = '名字不能少于两位'
                         }else if(n >=4){
-                            this.msg2 = '名字不能超过三位'
+                            this.msg2 = '名字不能超过三位';
+                            // return '名字不能超过三位';
                         }else {
                             this.msg2 = '正确'
                         }
                     },200);
+                    return 123;
                 },
                 set(){}
-            }
+            } */
         },
         watch:{
             //只能监听 data中存在的；可以支持异步
-            // name2(cur,prev){
-            //     setTimeout(()=>{
-            //         if(cur.length >=4){
-            //             this.msg2 = '名字太长'
-            //         }
-            //     },2000)
-            // }
+            name2(cur,prev){
+                setTimeout(()=>{
+                    if(cur.length >=4){
+                        this.msg2 = '名字太长'
+                    }
+                },2000)
+            }
         }
     })
 </script>  

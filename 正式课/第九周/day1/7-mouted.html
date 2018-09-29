@@ -14,7 +14,8 @@
 <script>
     /*
     * 子父组件之间   子组件先渲染完毕  父组件最后才能渲染完毕
-    *
+    * mounted  是子组件先执行
+    * created  是父组件先执行
     * */
     let son = {
         template:'<div>子组件{{name}}</div>',

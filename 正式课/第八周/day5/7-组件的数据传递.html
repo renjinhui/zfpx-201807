@@ -32,6 +32,16 @@
             son:{
                 template:'<div><h1>this is a son</h1>{{arr2}} <button @click="fn">按钮</button></div>',
                 props:['ary','obj','w'],
+                props:{
+                    ary:{
+                        type:Array,
+                        default:[],
+                        required:false,
+                        validator(val){
+                            return true
+                        }
+                    }
+                },
                 data(){
                     return{
                         n:10,

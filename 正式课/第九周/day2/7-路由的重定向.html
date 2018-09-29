@@ -62,15 +62,29 @@
         // },
         {
             path:'/home',
-            component:home
+            component:home,
+            // children:[
+            //     {
+            //         path:'home1',
+            //         component: home
+            //     }
+            // ]
         },
         {
             path:'/list',
-            component:list
+            component:list,
+            meta:{
+                til:'dfgdg'
+            }
         },
         {
             path:'/list2',
-            component:list2
+            component:list2,
+            children:[
+                {
+
+                }
+            ]
         },
         {
             path:"/*",
